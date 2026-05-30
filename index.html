@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OneDroneMedia | Drone Photography & Aerial Media</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="description"
+    content="OneDroneMedia provides professional drone photography, aerial video, property media, event coverage, and commercial content for businesses and private clients.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: Inter, sans-serif;
+    }
+
+    .social-link {
+      align-items: center;
+      border: 1px solid rgba(255, 255, 255, .18);
+      color: white;
+      display: inline-flex;
+      height: 42px;
+      justify-content: center;
+      width: 42px;
+    }
+
+    .social-link:hover {
+      background: rgba(255, 255, 255, .1);
+    }
+
+    .hero-bg {
+      background-image:
+        linear-gradient(90deg, rgba(8, 13, 18, .92), rgba(8, 13, 18, .62), rgba(8, 13, 18, .22)),
+        url("https://images.unsplash.com/photo-1508444845599-5c89863b1c44?auto=format&fit=crop&w=1800&q=80");
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+
+<body class="bg-stone-50 text-zinc-900">
+  <header class="fixed left-0 right-0 top-0 z-50 border-b border-white/10 bg-zinc-950/86 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
+      <a href="index.html" class="text-lg font-extrabold tracking-tight text-white">OneDroneMedia</a>
+      <button id="menuBtn" class="border border-white/20 px-3 py-2 text-sm font-semibold text-white md:hidden"
+        aria-label="Open menu">Menu</button>
+      <nav class="hidden items-center gap-7 text-sm font-semibold text-zinc-200 md:flex">
+        <a class="hover:text-white" href="index.html">Home</a>
+        <a class="hover:text-white" href="showcase.html">Showcase</a>
+        <a class="hover:text-white" href="products.html">Packages</a>
+        <a class="hover:text-white" href="equipment.html">Equipment</a>
+        <a class="bg-emerald-500 px-4 py-2 text-zinc-950 hover:bg-emerald-400" href="#contact">Book a shoot</a>
+      </nav>
+    </div>
+    <nav id="mobileMenu"
+      class="hidden border-t border-white/10 bg-zinc-950 px-5 py-4 text-sm font-semibold text-zinc-200 md:hidden">
+      <div class="flex flex-col gap-4">
+        <a href="index.html">Home</a>
+        <a href="showcase.html">Showcase</a>
+        <a href="products.html">Packages</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="#contact">Book a shoot</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-bg flex min-h-screen items-center pt-20 text-white">
+      <div class="mx-auto w-full max-w-7xl px-5 py-24">
+        <div class="max-w-3xl">
+          <p class="mb-5 text-sm font-bold uppercase tracking-[.28em] text-emerald-300">In front of the rest. High
+            enough for the best.</p>
+          <h1 class="text-5xl font-extrabold leading-tight tracking-tight md:text-7xl">OneDroneMedia</h1>
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-zinc-200">Elevate your visuals with stunning aerial and
+            ground-based media, captured with cinematic precision for business, property, events, and special occasions.
+          </p>
+          <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+            <a href="#contact"
+              class="bg-emerald-500 px-6 py-3 text-center font-bold text-zinc-950 hover:bg-emerald-400">Request a
+              quote</a>
+            <a href="products.html"
+              class="border border-white/30 px-6 py-3 text-center font-bold text-white hover:bg-white hover:text-zinc-950">View
+              packages</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-b border-zinc-200 bg-white py-16">
+      <div class="mx-auto grid max-w-7xl gap-8 px-5 md:grid-cols-3">
+        <div>
+          <p class="text-4xl font-extrabold">4K</p>
+          <p class="mt-2 text-zinc-600">High-resolution aerial photography and video suitable for web, social, and
+            campaign use.</p>
+        </div>
+        <div>
+          <p class="text-4xl font-extrabold">Fast</p>
+          <p class="mt-2 text-zinc-600">Clear planning, efficient capture, and polished delivery for time-sensitive
+            projects.</p>
+        </div>
+        <div>
+          <p class="text-4xl font-extrabold">Safe</p>
+          <p class="mt-2 text-zinc-600">Professional flight planning with attention to location, weather, people, and
+            property.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24">
+      <div class="mx-auto max-w-7xl px-5">
+        <div class="max-w-2xl">
+          <p class="text-sm font-bold uppercase tracking-[.2em] text-emerald-700">Services</p>
+          <h2 class="mt-3 text-4xl font-extrabold tracking-tight md:text-5xl">Aerial, ground, and interactive media for
+            professional outcomes.</h2>
+        </div>
+        <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <article class="border border-zinc-200 bg-white p-7">
+            <h3 class="text-xl font-bold">Aerial Photography & Videography</h3>
+            <p class="mt-4 text-zinc-600">Smooth, high-quality drone footage and photography captured from unique
+              heights.</p>
+          </article>
+          <article class="border border-zinc-200 bg-white p-7">
+            <h3 class="text-xl font-bold">Ground Photography</h3>
+            <p class="mt-4 text-zinc-600">Crisp, professional ground-level photography for people, places, products, and
+              events.</p>
+          </article>
+          <article class="border border-zinc-200 bg-white p-7">
+            <h3 class="text-xl font-bold">Ground 360 & Interactive Photos</h3>
+            <p class="mt-4 text-zinc-600">Immersive views that allow viewers to explore spaces with a more engaging
+              perspective.</p>
+          </article>
+          <article class="border border-zinc-200 bg-white p-7">
+            <h3 class="text-xl font-bold">Aerial Interactive 360</h3>
+            <p class="mt-4 text-zinc-600">Fully interactive aerial experiences for locations, venues, tourism, property,
+              and marketing.</p>
+          </article>
+          <article class="border border-zinc-200 bg-white p-7">
+            <h3 class="text-xl font-bold">Event Coverage</h3>
+            <p class="mt-4 text-zinc-600">Complete coverage of your occasion from above and on location, ideal for
+              weddings and special events.</p>
+          </article>
+          <article class="border border-zinc-200 bg-white p-7">
+            <h3 class="text-xl font-bold">Print Services</h3>
+            <p class="mt-4 text-zinc-600">Selected images can be printed onto canvas, posters, cups, mouse mats, and
+              other personalised products.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-20">
+      <div class="mx-auto grid max-w-7xl gap-8 px-5 lg:grid-cols-[.85fr_1.15fr] lg:items-center">
+        <div>
+          <p class="text-sm font-bold uppercase tracking-[.2em] text-emerald-700">Trusted service</p>
+          <h2 class="mt-3 text-4xl font-extrabold tracking-tight">Licensed, insured, and ready for a wide range of
+            projects.</h2>
+        </div>
+        <div class="border border-zinc-200 bg-stone-50 p-7">
+          <p class="text-lg font-bold text-zinc-950">Fully licensed by the CAA and fully insured.</p>
+          <p class="mt-4 leading-8 text-zinc-600">OneDroneMedia provides a safe, compliant, and professional service for
+            real estate, tourism, construction, marketing, weddings, and special events. Customisable packages are
+            available depending on the location, brief, and final deliverables required.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-zinc-950 py-24 text-white">
+      <div class="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
+        <div>
+          <p class="text-sm font-bold uppercase tracking-[.2em] text-emerald-300">Process</p>
+          <h2 class="mt-3 text-4xl font-extrabold tracking-tight md:text-5xl">Planned carefully. Delivered cleanly.</h2>
+          <p class="mt-5 text-zinc-300">Each project starts with the result you need. From shot planning to final
+            delivery, OneDroneMedia keeps the production focused, organised, and professional.</p>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div class="border border-white/10 p-6">
+            <h3 class="font-bold">Brief</h3>
+            <p class="mt-3 text-sm leading-6 text-zinc-300">Confirm the location, goals, usage, timings, and required
+              deliverables.</p>
+          </div>
+          <div class="border border-white/10 p-6">
+            <h3 class="font-bold">Plan</h3>
+            <p class="mt-3 text-sm leading-6 text-zinc-300">Assess the shoot environment, weather, access, and flight
+              considerations.</p>
+          </div>
+          <div class="border border-white/10 p-6">
+            <h3 class="font-bold">Capture</h3>
+            <p class="mt-3 text-sm leading-6 text-zinc-300">Record high-quality aerial visuals with consistent framing
+              and professional control.</p>
+          </div>
+          <div class="border border-white/10 p-6">
+            <h3 class="font-bold">Deliver</h3>
+            <p class="mt-3 text-sm leading-6 text-zinc-300">Provide edited images or video files ready for your chosen
+              platforms.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24">
+      <div class="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-2 lg:items-center">
+        <img class="h-[420px] w-full object-cover"
+          src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=1200&q=80"
+          alt="Drone flying above a landscape">
+        <div>
+          <p class="text-sm font-bold uppercase tracking-[.2em] text-emerald-700">Equipment</p>
+          <h2 class="mt-3 text-4xl font-extrabold tracking-tight">Reliable tools for reliable results.</h2>
+          <p class="mt-5 leading-8 text-zinc-600">From aerial cameras to stabilisation, batteries, storage, and editing
+            hardware, the equipment is selected to support sharp capture and dependable delivery.</p>
+          <a href="equipment.html"
+            class="mt-7 inline-block bg-zinc-950 px-6 py-3 font-bold text-white hover:bg-zinc-800">See equipment</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-white py-24">
+      <div class="mx-auto max-w-4xl px-5 text-center">
+        <p class="text-sm font-bold uppercase tracking-[.2em] text-emerald-700">Contact</p>
+        <h2 class="mt-3 text-4xl font-extrabold tracking-tight md:text-5xl">Ready to plan your next aerial shoot?</h2>
+        <p class="mx-auto mt-5 max-w-2xl text-zinc-600">Please ask for details, quotes, and availability. Tell
+          OneDroneMedia what you need captured, where the project is based, and when you would like it completed.</p>
+        <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+          <a href="https://wa.me/447868553320"
+            class="inline-block bg-emerald-500 px-7 py-3 font-bold text-zinc-950 hover:bg-emerald-400">WhatsApp: +44
+            7868 553320</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-zinc-200 bg-zinc-950 px-5 py-8 text-center text-sm text-zinc-400">
+    <div class="mb-5 flex justify-center gap-3">
+      <a class="social-link" href="https://www.tiktok.com/@onedronemedia?_r=1&amp;_t=ZN-96mtTuyZWTe" aria-label="OneDroneMedia on TikTok">
+        <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true"><path d="M16.6 5.8c1.2.9 2.5 1.4 4 1.5v3.4c-1.5 0-2.9-.4-4.1-1.1v5.8c0 3.2-2.6 5.7-5.8 5.7S5 18.6 5 15.4s2.6-5.7 5.7-5.7c.4 0 .8 0 1.1.1v3.5c-.3-.1-.7-.2-1.1-.2-1.3 0-2.3 1-2.3 2.3s1 2.3 2.3 2.3 2.4-1 2.4-2.3V3h3.5c.1 1.1.5 2 1 2.8Z"/></svg>
+      </a>
+      <a class="social-link" href="https://www.youtube.com/@onedronemedia/videos" aria-label="OneDroneMedia on YouTube">
+        <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2s-.2-1.5-.8-2.1c-.8-.8-1.7-.8-2.1-.9C15.8 4 12 4 12 4s-3.8 0-6.7.2c-.4.1-1.3.1-2.1.9-.6.6-.8 2.1-.8 2.1S2.2 9 2.2 10.9v1.8c0 1.9.2 3.7.2 3.7s.2 1.5.8 2.1c.8.8 1.9.8 2.4.9 1.7.2 6.4.2 6.4.2s3.8 0 6.7-.2c.4-.1 1.3-.1 2.1-.9.6-.6.8-2.1.8-2.1s.2-1.9.2-3.7v-1.8c0-1.9-.2-3.7-.2-3.7ZM10.2 14.7V8.3l5.8 3.2-5.8 3.2Z"/></svg>
+      </a>
+      <a class="social-link" href="https://www.facebook.com/one.drone.media.official" aria-label="OneDroneMedia on Facebook">
+        <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true"><path d="M14 8.7V6.8c0-.6.4-.8.9-.8h2.3V2.2L14 2c-3.2 0-5 2-5 5.5v1.2H5.8v4.2H9V22h4.3v-9.1h3.3l.6-4.2H14Z"/></svg>
+      </a>
+    </div>
+    <p>Copyright 2026 OneDroneMedia. Professional drone photography and aerial media.</p>
+  </footer>
+
+  <script>
+    document.getElementById('menuBtn').addEventListener('click', function () {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+
+</html>
